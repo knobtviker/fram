@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 27
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+}
+
+dependencies {
+    compileOnly 'com.google.android.things:androidthings:1.0'
+    implementation 'com.android.support:support-annotations:27.1.1'
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+}
+
+apply from: 'install.gradle'
+apply from: 'bintray.gradle'

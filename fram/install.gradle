@@ -1,0 +1,38 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.knobtviker.android.things.contrib.community.driver'
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.knobtviker.android.things.contrib.community.driver'
+                artifactId 'fram'
+
+                name 'fram'
+                description 'FRAM driver'
+                url 'https://github.com/knobtviker/fram'
+
+                licenses {
+                    license {
+                        name 'MIT'
+                        url 'https://github.com/knobtviker/fram/blob/master/LICENSE'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'knobtviker'
+                        name 'Bojan Komljenović'
+                        email 'knobtviker@gmail.com'
+                    }
+                }
+                scm {
+                    connection 'https://github.com/knobtviker/fram.git'
+                    developerConnection 'https://github.com/knobtviker/fram.git'
+                    url 'https://github.com/knobtviker/fram'
+                }
+            }
+        }
+    }
+}
