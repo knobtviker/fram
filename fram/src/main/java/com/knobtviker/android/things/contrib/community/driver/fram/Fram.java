@@ -387,7 +387,7 @@ public abstract class Fram implements Closeable {
         if (VERBOSE) {
             Timber.i("FRAM object created");
             Timber.i("I2C device address is 0x%02X", i2cAddress);
-            Timber.i("Write protect pin number is %d", writeProtectPin);
+            Timber.i("Write protect pin number is %s", writeProtectPin);
             Timber.i("Write protect management: %s", String.valueOf(MANAGE_WRITE_PROTECT));
             Timber.i("Manufacturer 0x%02X", manufacturer);
             Timber.i("ProductId 0x%02X", productId);
